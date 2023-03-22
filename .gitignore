@@ -1,0 +1,9 @@
+#=======================================#
+#=============> gitignore <=============#
+#=======================================#
+
+# Ignore data in the 'markdowns' folder
+markdowns/**
+
+# Ignore data in the 'input' folder
+input/*.csv*
