@@ -12,10 +12,7 @@ To create the database, I wrote to scripts: One to assign IDs to each cereal and
 ### Simple GET requests
 > Make an endpoint where you can make GET requests on ID and without ID to get all objects.
 
-When the `/cereals` endpoint is called, the API responds with the entire dataset. Data for a single cereal can be requested by extending the endpoint with a cereal ID like so: 
-```
-{host}/cereals/1
-```
+When the `/cereals` endpoint is called, the API responds with the entire dataset. Data for a single cereal can be requested by extending the endpoint with a cereal ID like so: `{host}/cereals/1`    
 Specifying an ID number not present in the data will yield an error message.    
 Making a GET request on the root directory will give metadata about the SQL cereals table as a response.  
 
@@ -28,10 +25,7 @@ The `/cereals` endpoint supports the following 16 query parameters, all of them 
 
 id _(str)_, name _(str)_, mfr _(str)_, type _(str)_, calories _(int)_, protein _(int)_, fat _(int)_, sodium _(int)_, fiber _(float)_, carbo _(float)_, sugars _(int)_, potass _(int)_, vitamins _(int)_, shelf _(int)_, weight _(float)_, cups _(float)_    
 
-This can be done like so: 
-```
-{host}/cereals?fat=1&sugars=3
-```
+This can be done like so: `{host}/cereals?fat=1&sugars=3`    
 The order of the parameters is not meaningful. 
 
 ### POST Requests
@@ -41,10 +35,8 @@ If the object is not found, an error must be sent stating that you cannot choose
 If you want to create a new object, a POST request without an ID must be sent.    
 
 The post requests work according to the task-specifications. All columns except _name_ and _mfr_ are optional.       
-A post request to this endpoint:    
-```
-{host}/post
-```
+A post request to this endpoint: `{host}/post`    
+
 With the following body:
 ```
 {
