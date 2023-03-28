@@ -68,3 +68,15 @@ The API expects the parameters in the request body to have the following types:
 | weight    | float | Yes      | 
 | cups      | float | Yes      |
 
+## Repository Structure
+- __:file_folder: api:__ Folder for API code
+    - main.py: script that creates the API
+
+- __:file_folder: Data:__ Folder for input data to add to the database
+- __:file_folder: db:__ Folder for .db (database) file 
+- __:file_folder: src:__ Folder for python scripts for the database
+    - create_database.py: Creates the database and adds the data from the csv file to as a table. Will yield an error message if a _cereal_database.db_ file already exists in the _db_ folder. 
+    - data_cleaning.py: Cleans data and assigns ID to cereals.
+    
+- __:page_facing_up: .gitignore__
+- __:page_facing_up: requirements.txt__
