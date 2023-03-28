@@ -80,3 +80,17 @@ The API expects the parameters in the request body to have the following types:
     
 - __:page_facing_up: .gitignore__
 - __:page_facing_up: requirements.txt__
+
+## How to use
+To clean data run _data_cleaning.py_ from the repository folder in the command line, shell, or terminal using: 
+```
+python src/data_cleaning.py
+```
+Then create the database using:
+```
+python src/create_database.py
+```
+And finally, to host the API locally, navigate to the _api_ folder and use ´uvicorn´ like so: 
+```
+uvicorn main:app
+```
