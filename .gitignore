@@ -6,4 +6,4 @@
 markdowns/**
 
 # Ignore data in the 'input' folder
-input/*.csv*
+data/*.csv*
